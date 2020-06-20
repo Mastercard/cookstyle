@@ -3,6 +3,8 @@ source 'https://rubygems.org'
 # Specify your gem's dependencies in cookstyle.gemspec
 gemspec
 
+gem "rubocop", git: "https://github.com/rubocop-hq/rubocop.git", branch: "master"
+
 group :debug do
   gem 'pry'
   gem 'pry-byebug'
