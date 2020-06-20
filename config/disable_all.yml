@@ -211,6 +211,8 @@ Lint/BooleanSymbol:
   Enabled: false
 Lint/CircularArgumentReference:
   Enabled: false
+Lint/ConstantResolution:
+  Enabled: false
 Lint/Debugger:
   Enabled: false
 Lint/DeprecatedClassMethods:

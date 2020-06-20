@@ -1361,6 +1361,15 @@ Lint/CircularArgumentReference:
   Enabled: true
   VersionAdded: '0.33'
 
+Lint/ConstantResolution:
+  Description: 'Check that constants are fully qualified with `::`.'
+  Enabled: false
+  VersionAdded: '0.86'
+  # Restrict this cop to only looking at certain names
+  Only: []
+  # Restrict this cop from only looking at certain names
+  Ignore: []
+
 Lint/Debugger:
   Description: 'Check for debugger calls.'
   Enabled: true
@@ -1925,7 +1934,7 @@ Metrics/CyclomaticComplexity:
   VersionAdded: '0.25'
   VersionChanged: '0.81'
   IgnoredMethods: []
-  Max: 6
+  Max: 7
 
 Metrics/MethodLength:
   Description: 'Avoid methods longer than 10 lines of code.'
@@ -3239,6 +3248,7 @@ Style/MultilineTernaryOperator:
   StyleGuide: '#no-multiline-ternary'
   Enabled: true
   VersionAdded: '0.9'
+  VersionChanged: '0.86'
 
 Style/MultilineWhenThen:
   Description: 'Do not use then for multi-line when statement.'
@@ -3343,6 +3353,7 @@ Style/NestedTernaryOperator:
   StyleGuide: '#no-nested-ternary'
   Enabled: true
   VersionAdded: '0.9'
+  VersionChanged: '0.86'
 
 Style/Next:
   Description: 'Use `next` to skip iteration instead of a condition at the end.'
@@ -3875,6 +3886,7 @@ Style/StructInheritance:
   StyleGuide: '#no-extend-struct-new'
   Enabled: true
   VersionAdded: '0.29'
+  VersionChanged: '0.86'
 
 Style/SymbolArray:
   Description: 'Use %i or %I for arrays of symbols.'
